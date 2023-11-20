@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-class Program
+class Program          
 {
     class Product
     {
