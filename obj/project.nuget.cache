@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PHYM6zokbVyeK3jBsQsDHqSAcEgkzVnKI5lXkctxKh7f/Q6LEh05fQ+40xR2EL5Z3eHDk1x5jT/PI02bxjY8Gw==",
+  "dgSpecHash": "Bk2guF0pW1RfEqrYXf5mkEHkPGoUSqi7L1SFydTnIEfN6KOFWEZiMcPfbcOHKpAdenW+6sDNSwNJeCDNIOZTQQ==",
   "success": true,
-  "projectFilePath": "/Users/inigotobias/Documents/Projects/app/app.csproj",
+  "projectFilePath": "/Users/inigotobias/dreamncode/app.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/inigotobias/Documents/Projects/app/app.csproj",
+      "projectUniqueName": "/Users/inigotobias/dreamncode/app.csproj",
       "projectName": "app",
-      "projectPath": "/Users/inigotobias/Documents/Projects/app/app.csproj",
+      "projectPath": "/Users/inigotobias/dreamncode/app.csproj",
       "packagesPath": "/Users/inigotobias/.nuget/packages/",
-      "outputPath": "/Users/inigotobias/Documents/Projects/app/obj/",
+      "outputPath": "/Users/inigotobias/dreamncode/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/inigotobias/.nuget/NuGet/NuGet.Config"

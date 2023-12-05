@@ -12,3 +12,17 @@
 /Users/inigotobias/Documents/Projects/app/obj/Debug/net7.0/app.pdb
 /Users/inigotobias/Documents/Projects/app/obj/Debug/net7.0/app.genruntimeconfig.cache
 /Users/inigotobias/Documents/Projects/app/obj/Debug/net7.0/ref/app.dll
+/Users/inigotobias/dreamncode/bin/Debug/net7.0/app
+/Users/inigotobias/dreamncode/bin/Debug/net7.0/app.deps.json
+/Users/inigotobias/dreamncode/bin/Debug/net7.0/app.runtimeconfig.json
+/Users/inigotobias/dreamncode/bin/Debug/net7.0/app.dll
+/Users/inigotobias/dreamncode/bin/Debug/net7.0/app.pdb
+/Users/inigotobias/dreamncode/obj/Debug/net7.0/app.GeneratedMSBuildEditorConfig.editorconfig
+/Users/inigotobias/dreamncode/obj/Debug/net7.0/app.AssemblyInfoInputs.cache
+/Users/inigotobias/dreamncode/obj/Debug/net7.0/app.AssemblyInfo.cs
+/Users/inigotobias/dreamncode/obj/Debug/net7.0/app.csproj.CoreCompileInputs.cache
+/Users/inigotobias/dreamncode/obj/Debug/net7.0/app.dll
+/Users/inigotobias/dreamncode/obj/Debug/net7.0/refint/app.dll
+/Users/inigotobias/dreamncode/obj/Debug/net7.0/app.pdb
+/Users/inigotobias/dreamncode/obj/Debug/net7.0/app.genruntimeconfig.cache
+/Users/inigotobias/dreamncode/obj/Debug/net7.0/ref/app.dll

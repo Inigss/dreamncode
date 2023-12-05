@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 
-class Program          
+class Program
 {
     class Product
     {
@@ -31,7 +28,7 @@ class Program
 
     static void Main()
     {
-        Console.WriteLine("Welcome to Dream n Code Clothing!");
+        Console.WriteLine("Welcome to Luis Clothing Shop!");
 
         bool backToMainMenu = false;
 
@@ -65,7 +62,7 @@ class Program
                     Exit();
                     break;
                 default:
-                    Console.WriteLine("Invalid choice. Please try again.");
+                    Console.WriteLine("Invalid choice. Please Enter between 1-5 only.");
                     break;
             }
         }
@@ -79,7 +76,7 @@ class Program
             Console.WriteLine("Products available:");
             foreach (var product in products)
             {
-                Console.WriteLine($"ID: {product.Id}, Name: {product.Name}, Price: {product.Price:C}");
+                Console.WriteLine($"ID: {product.Id}, Name: {product.Name}, Price: {string.Format("{0:C}", product.Price)}");
             }
 
             Console.WriteLine(" Press 0 to go back home page. ");
@@ -88,28 +85,26 @@ class Program
 
             if (choice == "0")
             {
-                // If the user enters 0, break out of the loop and return to the main menu
                 backToMainMenu = true;
             }
             else
             {
-                Console.WriteLine("Invalid choice. Please try again.");
+                Console.WriteLine("Invalid choice. Please enter between 1 to 5 only.");
             }
         }
     }
-
     static void AddToCart()
     {
         bool backToMainMenu = false;
 
         while (!backToMainMenu)
         {
+            Console.WriteLine(" Press 0 to go back home page. ");
             Console.WriteLine("Choose a product to add to the cart (enter product ID): ");
             string input = Console.ReadLine();
 
             if (input == "0")
             {
-                // If the user enters 0, set the variable to true to exit the loop
                 backToMainMenu = true;
             }
             else if (int.TryParse(input, out int productId))
@@ -121,17 +116,17 @@ class Program
                     int quantity;
                     if (int.TryParse(Console.ReadLine(), out quantity) && quantity > 0)
                     {
-                        // Check if the product is already in the cart
+                        
                         CartItem existingItem = cart.Find(item => item.Product.Id == productId);
 
                         if (existingItem != null)
                         {
-                            // If the product is already in the cart, update the quantity
+                            
                             existingItem.Quantity += quantity;
                         }
                         else
                         {
-                            // If the product is not in the cart, add a new item
+                            
                             cart.Add(new CartItem { Product = selectedProduct, Quantity = quantity });
                         }
 
@@ -169,12 +164,12 @@ class Program
         Console.WriteLine("Your cart is empty.");
     }
 
-    Console.WriteLine("Press 0 to go back to the main menu.");
+    Console.WriteLine("Press 0 to go back home page.");
     string choice = Console.ReadLine();
 
     if (choice == "0")
     {
-        // If the user enters 0, return to the main menu
+        
         return;
     }
     else
@@ -190,27 +185,24 @@ class Program
         Console.WriteLine("Your cart is empty. Unable to proceed with checkout.");
         return;
     }
-
+    Console.WriteLine(" Press 0 to go back home page. ");
     Console.WriteLine("Items in the cart:");
     foreach (var item in cart)
     {
         Console.WriteLine($"{item.Quantity} {item.Product.Name}(s) - {item.Product.Price:C} each");
     }
 
-    // Calculate the total price
+    
     double totalPrice = cart.Sum(item => item.Quantity * item.Product.Price);
     Console.WriteLine($"Total Price: {totalPrice:C}");
 
-    // Add any additional checkout steps here
-
-    // Clear the cart after checkout
     cart.Clear();
 
-    Console.WriteLine("Checkout successful. Thank you for choosing Dream n Code Clothing!");
+    Console.WriteLine("Checkout successful. Thank you for choosing Luis Clothing Shop!");
 }
 static void Exit()
 {
-    Console.WriteLine("Exiting the program. Thank you for choosing Dream n Code Clothing!");
+    Console.WriteLine("Exiting the program. Thank you for choosing Luis Clothing Shop!");
     Environment.Exit(0);
 
 }
